@@ -1,0 +1,107 @@
+<header class="header">
+    <div class="row">
+        <div class="col col1">
+            <span class="site-logo"><a href="/"><img src="/favicon.ico"><span>webtec</span></a></span>
+        </div>
+        <div class="col col2">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/om">☰</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col col3">
+            <a href="/om">☰</a>
+        </div>
+    </div>
+</header>
+
+<style>
+/* Site header */
+.header {
+    position: relative;
+}
+.header .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+}
+.header .row .col {
+    /*background-color: #ccc; /* */
+} 
+.header .row .col1,
+.header .row .col3 {
+    width: 200px;
+}
+
+/* Logo top left */
+.site-logo {
+    font-family: monospace;
+    font-family: "Courier New",Courier,monospace;
+    font-size: 2em;
+    line-height: 1;
+    text-align: center;
+}
+.site-logo span {
+    position: relative;
+    top: -15px;
+}
+.site-logo a {
+    color: #333;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+.site-logo a:visited {
+    color: #333;
+}
+.site-logo a:hover {
+    color: #3B440D;
+    text-shadow: 2px -2px 2px #9FB129;
+}
+
+/* Navbar */
+.navbar {
+    text-align: center;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    display: inline-block;
+}
+.navbar li a {
+    color: inherit;
+    background-color: inherit;
+}
+.navbar a {
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 0 1.5em;
+    outline: 0;
+    font-size: 1.5em
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Logo top right */
+.glider {
+    position: absolute;
+    right: 0px;
+    opacity: .1;
+}
+@media screen and (max-width: 1000px) {
+	.glider {
+		width: 100px;
+	}
+}
+@media screen and (max-width: 750px) {
+	.glider {
+		width: 75px;
+	}
+}
+</style>

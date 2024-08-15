@@ -1,0 +1,65 @@
+:root {
+    --accent: 124, 58, 237;
+    --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+}
+html {
+    /* font-family: system-ui, sans-serif; */
+    background-color: #FEFEFE;
+    overflow-y:scroll;
+}
+body {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    letter-spacing: .01em;
+    margin: 1em;
+}
+main {
+    margin: auto;
+    max-width: 60rem;
+    margin-bottom: 6rem;
+    min-height: 30rem;
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    border-bottom: 1px solid #999;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+h1.main {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    border-radius: 10px;
+    color: green;
+    border-color: green;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+h1,h2,h3,h4 {
+    color: #4b4b4b;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.code {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    font-size: 2em;
+}
+
+/* Links */
+a:link {
+    color: green;
+}
+a:hover {
+    text-decoration: none;
+}
+/*
+a:visited {
+    color: #838;
+}
+*/
