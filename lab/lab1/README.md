@@ -1,14 +1,16 @@
+<!--
 ---
 revision:
     "2024-10-03": "(B, mos) Removed css-file and dapted for bash."
     "2024-10-01": "(A, mos) First version."
 ---
+-->
 Programmera grunderna i JavaScript
 ===========================
 
 I denna övningen får du träna på att programmera med grunderna i programmeringsspråket JavaScript med siffor boolean, strängar och arrayer samt loopar och if-satser.
 
-[[_TOC_]]
+<!-- [[_TOC_]] -->
 
 <!--
 TODO
