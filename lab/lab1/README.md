@@ -5,6 +5,9 @@ revision:
     "2024-10-01": "(A, mos) First version."
 ---
 -->
+
+![header](img/header.png)
+
 Programmera grunderna i JavaScript
 ===========================
 
