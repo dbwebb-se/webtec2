@@ -1,4 +1,6 @@
-// ----------------------------- Implement all functions below -----------------------------
+/**
+ * Implement the functions below.
+ */ 
 
 /**
  * Returns the string "Hello world".

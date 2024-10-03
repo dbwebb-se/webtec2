@@ -51,9 +51,9 @@ cd lab1
 Nu skall vi hämta tre filer från nätet som behövs för att komma igång med labben. Exekvera följande kommandon i terminalen.
 
 ```bash
-wget -O lab.html https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/lab.html
-wget -O main.js https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/main.js
-wget -O module.js https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/module.js
+curl --slient --output lab.html https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/lab.html
+curl --slient --output main.js https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/main.js
+curl --slient --output module.js https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/module.js
 ```
 
 När du är klar kan det se ut så här.
@@ -160,5 +160,5 @@ Använd lösningen om du fastnar och inte lyckas ta dig vidare, eller som en stu
 
 ```bash
 # Stå i katalogen där du har labben
-wget -O solution.js https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/solution.js
+curl --silent --output solution.js https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/solution.js
 ```
