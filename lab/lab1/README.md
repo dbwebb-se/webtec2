@@ -43,47 +43,39 @@ Förbered dig så här för övningen. Börja att öppna din terminal och gå ti
 
 Skapa nu en katalog för `lab1`.
 
-```
+```bash
 mkdir lab1
 cd lab1
 ```
 
 Nu skall vi hämta tre filer från nätet som behövs för att komma igång med labben. Exekvera följande kommandon i terminalen.
 
-```
-wget -O lab.html https://gitlab.com/mikael-roos/webbutveckling2/-/raw/main/public/example/js/lab1/lab.html
-wget -O main.js https://gitlab.com/mikael-roos/webbutveckling2/-/raw/main/public/example/js/lab1/main.js
-wget -O module.js https://gitlab.com/mikael-roos/webbutveckling2/-/raw/main/public/example/js/lab1/module.js
+```bash
+wget -O lab.html https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/lab.html
+wget -O main.js https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/main.js
+wget -O module.js https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/module.js
 ```
 
 När du är klar kan det se ut så här.
 
-```
-PS C:\Users\mos\webbutveckling2\lab1> ls
-
-
-    Directory: C:\Users\mos\webbutveckling2\lab1
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----         10/2/2024   1:38 PM           1826 main.js
--a----         10/2/2024   1:38 PM           4028 module.js
--a----         10/2/2024   1:38 PM            385 page.html
--a----         10/2/2024   1:38 PM            149 style.css
+```bash
+$ ls -l                                           
+-rw-rw-r-- 1 mos mos  484 okt  3 16:01 lab.html   
+-rw-rw-r-- 1 mos mos 1,8K okt  3 16:01 main.js    
+-rw-rw-r-- 1 mos mos 3,9K okt  3 16:01 module.js  
 ```
 
-Nu kan du öppna din vscode utifrån denna katalogen.
+Nu kan du öppna din editor utifrån denna katalogen.
 
 ```
 code .
 ```
 
-Tittar runt i de fyla filerna som finns i labben och försök förstå hur de händer ihop. 
+Tittar runt i de filerna som finns i labben och försök förstå hur de händer ihop.
 
-Öppna webbsidan `page.html` i din webbläsare via LiveServer.
+Börja med att öppna webbsidan `lab.html` i din webbläsare via LiveServer.
 
-Öppna din dev tools och fliken console. Här kan du exekvera hela labben och du får status utskriven.
+Öppna din dev tools och fliken console. Här kan du exekvera hela labben och du får aktuell status utskriven.
 
 Det kan se ut så här.
 
@@ -112,6 +104,8 @@ export function hello () {
 ```
 
 När du är klar med din implementation så kan du ladda om din webbsida och se om det blev grönt.
+
+Klicka på "Lösningsförslag" nedan för att se hur det kan se ut när du implementerat denna delen.
 
 <details>
 <summary>Lösningsförslag</summary>
@@ -149,4 +143,22 @@ Nu har du den tillgänglig och kan anropa en metod som ligger i modulen.
 module.hello()
 ```
 
+Det kan se ut så här när du gör det i devtools console.
+
+![import](img/import.png)
+
 Nu kan du implementera funktionerna, samtidigt som du kan testköra dem.
+
+
+
+Lösning
+---------------------------
+
+Denna labben har en lösningsfil som du kan ladda ned och studera. Ibland finns flera olika lösningsförslat till en funktion.
+
+Använd lösningen om du fastnar och inte lyckas ta dig vidare, eller som en studiehjälp för att jämföra dina egna lösningar med lösningar som någon annan har skrivit.
+
+```bash
+# Stå i katalogen där du har labben
+wget -O solution.js https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/solution.js
+```
