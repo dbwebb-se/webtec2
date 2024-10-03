@@ -157,20 +157,3 @@ export function isPalindrom (str) {
   }
   return true
 }
-
-// ----------------------------- Internal function -----------------------------
-
-/**
- * Check a testcase and write status if it succeeds or not, this function is to make the output of the lab to work.
- * @param {Function} func - The function to test.
- * @param {Function} expected - The expected result from the function call.
- * @param {Function} args - The arguments to send to the function.
- * @returns {string} A string representation of the test case success or failure.
- */
-export function test (func, expected, args) {
-  const result = func(...args)
-  const success = expected === result ? '✅' : '❌'
-  // check if array []
-  // print as string ''
-  return `${success} [${func.name}] ${expected} (${typeof expected}) => ${result} (${typeof result})`
-}

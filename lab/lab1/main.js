@@ -1,3 +1,7 @@
+/**
+ * This is the main file that executes all test cases to assert that the
+ * functions in the module.js are implemented as expected.
+ */
 import * as lab from './lab.js'
 import * as module from './module.js'
 
