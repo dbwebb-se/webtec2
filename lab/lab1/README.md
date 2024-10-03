@@ -162,7 +162,12 @@ Denna labben har en lösningsfil som du kan ladda ned och studera. Ibland finns 
 
 Använd lösningen om du fastnar och inte lyckas ta dig vidare, eller som en studiehjälp för att jämföra dina egna lösningar med lösningar som någon annan har skrivit.
 
+<details>
+<summary>Hämta lösningsförslagen</summary>
+
 ```bash
 # Stå i katalogen där du har labben
 curl --silent --output solution.js https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/solution.js
 ```
+
+</details>
