@@ -54,6 +54,7 @@ Nu skall vi hämta tre filer från nätet som behövs för att komma igång med 
 curl --slient --output lab.html https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/lab.html
 curl --slient --output main.js https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/main.js
 curl --slient --output module.js https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/module.js
+curl --slient --output lab.js https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/lab.js
 ```
 
 När du är klar kan det se ut så här.
@@ -61,6 +62,7 @@ När du är klar kan det se ut så här.
 ```bash
 $ ls -l                                           
 -rw-rw-r-- 1 mos mos  484 okt  3 16:01 lab.html   
+-rw-rw-r-- 1 mos mos 3,9K okt  3 16:01 lab.js  
 -rw-rw-r-- 1 mos mos 1,8K okt  3 16:01 main.js    
 -rw-rw-r-- 1 mos mos 3,9K okt  3 16:01 module.js  
 ```
@@ -71,7 +73,7 @@ Nu kan du öppna din editor utifrån denna katalogen.
 code .
 ```
 
-Tittar runt i de filerna som finns i labben och försök förstå hur de händer ihop.
+Tittar runt i de filerna som finns i labben och försök förstå hur de hänger ihop.
 
 Börja med att öppna webbsidan `lab.html` i din webbläsare via LiveServer.
 
@@ -84,6 +86,8 @@ Det kan se ut så här.
 I filen `module.js` finns alla övningsuppgifter som du skall utföra i form av funktioner som skall implementeras. Varje gång du implementerar en funktion så kan du ladda om webbsidan för att se om det blir grönt eller rött.
 
 Det som visas i devtools console är utskriften från `main.js` och det är tester som körs mot de funktioner som du skall implementera.
+
+I filen `lab.js` finns de funktioner som utför testerna i labben och förbereder det som skrivs ut.
 
 
 
