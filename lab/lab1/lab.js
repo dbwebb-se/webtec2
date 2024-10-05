@@ -21,6 +21,27 @@ const feedback = {
 const stats = {}
 
 /**
+ * Format a value to its string represenation.
+ * @param {Object} args - A value to parse and format as a string.
+ * @returns {string} A string representation of the value.
+ */
+function argsAsString (args) {
+  let argStr = ''
+  for (let arg of args) {
+    if (typeof arg === 'string') {
+      argStr += `'${arg}', `
+    } else if (typeof arg === 'object' && Array.isArray(arg)) {
+        argStr += `[${arg}], `
+      } else {
+      argStr += `${arg}, `
+    }
+  }
+
+  return argStr.slice(0, -2)
+}
+
+
+  /**
  * Execute the testcase and assert that it was corrent or not and return a
  * status string the can be written out.
  * @param {Function} func - The function to test.
@@ -50,18 +71,11 @@ export function assert (func, expected, args, point=1) {
   }
 
   // Prepare the argument string
-  let argStr = ''
-  for (let arg of args) {
-    if (typeof arg === 'string') {
-      argStr += `'${arg}', `
-    } else if (typeof arg === 'object' && Array.isArray(arg)) {
-        argStr += `[${arg}], `
-      } else {
-      argStr += `${arg}, `
-    }
-  }
+  let argStr = argsAsString(args)
+  let expectedStr = argsAsString([expected])
+  let resultStr = argsAsString([result])
 
-  return `${success} ${stats[func.name].point}p ${func.name}(${argStr.slice(0, -2)}), expected: ${expected} (${typeof expected}), actual: ${result} (${typeof result})`
+  return `${success} ${stats[func.name].point}p ${func.name}(${argStr}), expected: ${expectedStr} (${typeof expected}), actual: ${resultStr} (${typeof result})`
 }
 
 /**
