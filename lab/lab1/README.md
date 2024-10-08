@@ -8,10 +8,10 @@ revision:
 
 ![header](img/header.png)
 
-Programmera grunderna i JavaScript
+Lab: Programmera grunderna i JavaScript
 ===========================
 
-I denna övningen får du träna på att programmera med grunderna i programmeringsspråket JavaScript med siffor boolean, strängar och arrayer samt loopar och if-satser.
+I denna laboration får du träna på att programmera med grunderna i programmeringsspråket JavaScript med siffor boolean, strängar och arrayer samt loopar och if-satser.
 
 <!-- [[_TOC_]] -->
 
@@ -163,7 +163,7 @@ Nu kan du implementera funktionerna, samtidigt som du kan testköra dem.
 Lösning
 ---------------------------
 
-Denna labben har en lösningsfil som du kan ladda ned och studera. Ibland finns flera olika lösningsförslat till en funktion.
+Denna labben har en lösningsfil som du kan ladda ned och studera. Ibland finns flera olika lösningsförslag till en funktion.
 
 Använd lösningen om du fastnar och inte lyckas ta dig vidare, eller som en studiehjälp för att jämföra dina egna lösningar med lösningar som någon annan har skrivit.
 

@@ -18,6 +18,7 @@ console.log(lab.assert(module.celsiusToFahrenheit, 32, [0]))
 console.log(lab.assert(module.celsiusToFahrenheit, 68, [20]))
 console.log(lab.assert(module.celsiusToFahrenheit, -4, [-20]))
 
+console.log(lab.assert(module.sumToN, 0, [0]))
 console.log(lab.assert(module.sumToN, 1, [1]))
 console.log(lab.assert(module.sumToN, 3, [2]))
 console.log(lab.assert(module.sumToN, 10, [4]))
