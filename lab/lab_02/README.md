@@ -57,32 +57,28 @@ Vi skall hämta ett par filer som behövs för att utföra labben. Utför följa
 https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/lab.js
 
 ```bash
-wget -OutFile Program.cs https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab_02/Program.cs
-wget -OutFile Module.cs https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab_02/Module.cs
-wget -OutFile Lab.cs https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab_02/Lab.cs
+wget -O Program.cs https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab_02/Program.cs
+wget -O Module.cs https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab_02/Module.cs
+wget -O Lab.cs https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab_02/Lab.cs
 ```
 
 När du är klar kan det se ut så här.
 
 ```bash
-PS C:\Users\mos\lab_02> dir
-
-    Directory: C:\Users\mos\lab_02
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----         10/9/2024   7:35 AM                bin
-d-----         10/9/2024   7:35 AM                obj
--a----         10/9/2024   7:35 AM           6860 Lab.cs
--a----         10/9/2024   7:35 AM            252 lab_02.csproj
--a----         10/9/2024   7:35 AM           2992 Module.cs
--a----         10/9/2024   7:37 AM           2341 Program.cs
+$ ls -l                                               
+total 28K                                             
+-rw-rw-r-- 1 mos mos 6,7K okt 30 14:39 Lab.cs         
+-rw-rw-r-- 1 mos mos 3,4K okt 30 14:39 Module.cs      
+-rw-rw-r-- 1 mos mos 3,0K okt 30 14:39 Program.cs     
+drwxrwxr-x 3 mos mos 4,0K okt 30 14:38 bin/           
+-rw-rw-r-- 1 mos mos  242 okt 30 14:37 lab_02.csproj  
+drwxrwxr-x 3 mos mos 4,0K okt 30 14:38 obj/           
 ```
 
 
 
 <details>
-<summary>PowerShell</summary>
+<summary>Jobba i PowerShell</summary>
 
 ```bash
 wget -OutFile Program.cs https://gitlab.com/mikael-roos/programmering1/-/raw/main/lab/lab_02/Program.cs
@@ -192,7 +188,7 @@ Använd lösningen om du fastnar och inte lyckas ta dig vidare, eller som en stu
 
 ```bash
 # Stå i katalogen där du har labben
-wget -OutFile Solution.cs https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab_02/Solution.cs
+wget -O Solution.cs https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab_02/Solution.cs
 ```
 
 </details>
