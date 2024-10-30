@@ -52,9 +52,10 @@ dotnet run
 
 ### Hämta filerna till labben
 
-Vi skall hämta ett par filer som behövs för att utföra labben. Utför följande kommandon.
+Vi skall hämta ett par filer som behövs för att utföra labben. Utför följande kommandon för att hämta labben, välj vilken terminal du jobbar i.
 
-https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab1/lab.js
+<details>
+<summary>Hämta labben (Bash)</summary>
 
 ```bash
 wget -O Program.cs https://raw.githubusercontent.com/dbwebb-se/webtec2/refs/heads/main/lab/lab_02/Program.cs
@@ -75,10 +76,11 @@ drwxrwxr-x 3 mos mos 4,0K okt 30 14:38 bin/
 drwxrwxr-x 3 mos mos 4,0K okt 30 14:38 obj/           
 ```
 
+</details>
 
 
 <details>
-<summary>Jobba i PowerShell</summary>
+<summary>Hämta labben (PowerShell)</summary>
 
 ```bash
 wget -OutFile Program.cs https://gitlab.com/mikael-roos/programmering1/-/raw/main/lab/lab_02/Program.cs
